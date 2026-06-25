@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jerinana Café — Caruaru</title>
+  <meta name="description"
+    content="Jerinana Café — Cafeteria autoral em Caruaru com grãos 100% arábica, receitas autorais e baristas apaixonados. Eleita a melhor cafeteria de Caruaru." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo.svg">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a class="nav-logo" href="#">
+      <img src="assets/logo.svg" alt="Jerinana Logo" />
+      <span>Jerinana</span>
+    </a>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#menu">Cardápio</a></li>
+      <li><a href="#unidades">Unidades</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#sobre" onclick="closeMobileNav()">Sobre</a>
+    <a href="#galeria" onclick="closeMobileNav()">Galeria</a>
+    <a href="#menu" onclick="closeMobileNav()">Cardápio</a>
+    <a href="#unidades" onclick="closeMobileNav()">Unidades</a>
+    <a href="#contato" onclick="closeMobileNav()">Contato</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">🏆 Eleita a Melhor Cafeteria de Caruaru</p>
+      <h1 class="hero-title">Café que <em>marca</em> pra sempre</h1>
+      <p class="hero-sub">Grãos 100% arábica, receitas autorais e um ambiente feito para todas as gerações. Venha viver
+        a experiência Jerinana.</p>
+      <div class="hero-ctas">
+        <a href="#menu" class="btn-primary">Ver cardápio</a>
+        <a href="#unidades" class="btn-secondary">Nossas unidades</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="assets/cafe3.png" alt="Extração de espresso na Jerinana" />
+      <div class="hero-overlay"></div>
+      <div class="hero-badge">
+        <div class="hero-badge-inner">
+          <div>🏆</div>
+          <div>Melhor<br />Caruaru</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="strip">
+    <div class="strip-track" id="strip-track">
+      <div class="strip-item"><span class="strip-icon">🌱</span><span class="strip-text">Café 100% Arábico</span></div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">🥗</span><span class="strip-text">Opções Veganas</span></div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">✨</span><span class="strip-text">Receitas Autorais</span></div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">📍</span><span class="strip-text">3 Unidades em Caruaru</span>
+      </div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">🏆</span><span class="strip-text">Melhor Cafeteria de
+          Caruaru</span></div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">☕</span><span class="strip-text">Baristas Apaixonados</span>
+      </div>
+      <span class="strip-sep">·</span>
+      <!-- Duplicate for seamless loop -->
+      <div class="strip-item"><span class="strip-icon">🌱</span><span class="strip-text">Café 100% Arábico</span></div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">🥗</span><span class="strip-text">Opções Veganas</span></div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">✨</span><span class="strip-text">Receitas Autorais</span></div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">📍</span><span class="strip-text">3 Unidades em Caruaru</span>
+      </div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">🏆</span><span class="strip-text">Melhor Cafeteria de
+          Caruaru</span></div>
+      <span class="strip-sep">·</span>
+      <div class="strip-item"><span class="strip-icon">☕</span><span class="strip-text">Baristas Apaixonados</span>
+      </div>
+      <span class="strip-sep">·</span>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="reveal">
+      <p class="sobre-label">Nossa história</p>
+      <h2 class="sobre-title">Uma cafeteria <em>autoral</em>, feita com alma</h2>
+      <p class="sobre-text">A Jerinana nasceu do amor pelos grãos especiais e pelo desejo de criar um espaço onde cada
+        xícara conta uma história. Somos um time de baristas felizes com um menu repleto de receitas autorais
+        desenvolvidas especialmente para os paladares de Caruaru.</p>
+      <p class="sobre-text">Do café coado no pano ao frappê artesanal, cada detalhe é pensado para que você viva uma
+        experiência completa — do primeiro aroma ao último gole.</p>
+      <div class="sobre-stats">
+        <div>
+          <div class="stat-num" data-target="10">0</div>
+          <div class="stat-label">Mil Seguidores</div>
+        </div>
+        <div>
+          <div class="stat-num" data-target="3">0</div>
+          <div class="stat-label">Unidades</div>
+        </div>
+        <div>
+          <div class="stat-num" data-target="100">0</div>
+          <div class="stat-label">% Arábica</div>
+        </div>
+      </div>
+    </div>
+    <div class="sobre-visual reveal">
+      <img src="assets/cafe5.jpg" alt="Cappuccino especial Jerinana com chantilly" />
+      <div class="sobre-visual-overlay"></div>
+      <div class="sobre-visual-badge">
+        <div class="badge-icon">☕</div>
+        <div>
+          <div class="badge-text">Grãos Especiais</div>
+          <div class="badge-sub">100% arábica selecionados</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="galeria" id="galeria">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-label">Nossos produtos</p>
+        <h2 class="section-title">Feitos com paixão</h2>
+      </div>
+    </div>
+    <div class="galeria-grid reveal">
+      <div class="galeria-item">
+        <img src="assets/cafe1.png" alt="Chocolate quente com chantilly" />
+        <div class="galeria-item-overlay"><span>Chocolate Especial</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="assets/cafe2.png" alt="Café na prensa francesa" />
+        <div class="galeria-item-overlay"><span>Prensa Francesa</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="assets/cafe4.png" alt="Latte art em copo de chocolate" />
+        <div class="galeria-item-overlay"><span>Latte Art</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="assets/refeicao.jpg" alt="Prato especial da Jerinana" />
+        <div class="galeria-item-overlay"><span>Refeições Autorais</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-label">O que preparamos</p>
+        <h2 class="section-title">Cardápio</h2>
+      </div>
+    </div>
+    <div class="menu-tabs reveal">
+      <button class="tab-btn active">Cafés</button>
+      <button class="tab-btn">Frapês</button>
+      <button class="tab-btn">Comidas</button>
+      <button class="tab-btn">Sobremesas</button>
+    </div>
+    <div class="menu-grid reveal" id="menu-grid">
+      <div class="menu-card">
+        <div class="menu-card-icon">☕</div>
+        <div class="menu-card-name">Espresso Jerinana</div>
+        <div class="menu-card-desc">Grão 100% arábica com notas de chocolate meio amargo e caramelo, extraído com
+          precisão.</div>
+        <span class="menu-tag">Clássico</span>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-icon">🥛</div>
+        <div class="menu-card-name">Cappuccino Autoral</div>
+        <div class="menu-card-desc">Nossa versão exclusiva do cappuccino, com espuma cremosa e toque de canela
+          artesanal.</div>
+        <span class="menu-tag">Favorito</span>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-icon">🫖</div>
+        <div class="menu-card-name">Prensa Francesa</div>
+        <div class="menu-card-desc">Servido na mesa para você extrair no seu tempo. Grãos especiais, experiência
+          completa.</div>
+        <span class="menu-tag">Especial</span>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-icon">☕</div>
+        <div class="menu-card-name">Café no Coador</div>
+        <div class="menu-card-desc">Preparado no coador de pano, do jeito que nossos avós faziam. Simples e perfeito.
+        </div>
+        <span class="menu-tag">Tradicional</span>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-icon">🌱</div>
+        <div class="menu-card-name">Latte Vegano</div>
+        <div class="menu-card-desc">Café especial com leite vegetal. Opção para quem tem alergia ao leite tradicional.
+        </div>
+        <span class="menu-tag vegan">Vegano</span>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-icon">🍫</div>
+        <div class="menu-card-name">Mocha de Caramel Brûlée</div>
+        <div class="menu-card-desc">Caramelo artesanal, leite vaporizado, café especial e crosta de açúcar maçaricado.
+        </div>
+        <span class="menu-tag">Autoral</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIDADES -->
+  <section class="unidades" id="unidades">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-label">Onde estamos</p>
+        <h2 class="section-title">Nossas Unidades</h2>
+      </div>
+    </div>
+    <div class="unidades-content reveal">
+      <div class="unidades-img">
+        <img src="assets/local.png" alt="Unidade Jerinana Café" />
+      </div>
+      <div class="unidades-cards">
+        <div class="unidade-card">
+          <div class="unidade-num">01</div>
+          <div class="unidade-name">Casa Tipos</div>
+          <div class="unidade-addr">Av. Oswaldo Cruz, 96<br />Maurício de Nassau<br />Caruaru — PE</div>
+          <div class="unidade-hours">Dom–Dom · 9h às 21h</div>
+        </div>
+        <div class="unidade-card">
+          <div class="unidade-num">02</div>
+          <div class="unidade-name">Ferreira Costa</div>
+          <div class="unidade-addr">Av. dos Estados, 129 — Loja 02<br />Nova Caruaru<br />Caruaru — PE</div>
+          <div class="unidade-hours">Seg–Sáb · 8h às 20h<br />Dom · 9h às 18h</div>
+        </div>
+        <div class="unidade-card">
+          <div class="unidade-num">03</div>
+          <div class="unidade-name">Shopping Difusora</div>
+          <div class="unidade-addr">Av. Agamenon Magalhães, 444<br />Shopping Difusora<br />Caruaru — PE</div>
+          <div class="unidade-hours">Horários do shopping</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+    <div class="reveal">
+      <p class="section-label">O que dizem</p>
+      <h2 class="section-title">Quem prova, volta</h2>
+    </div>
+    <div class="dep-carousel reveal">
+      <div class="dep-track" id="dep-track">
+        <div class="dep-slide">
+          <div class="dep-card">
+            <div class="dep-quote-mark">"</div>
+            <div class="dep-stars">★★★★★</div>
+            <p class="dep-text">"Grãos selecionados e claro, a deliciosa torta Jerinana fazendo parte no menu. Local
+              agradável e equipe super simpática."</p>
+            <div class="dep-author">Leo C. · Google</div>
+          </div>
+          <div class="dep-card">
+            <div class="dep-quote-mark">"</div>
+            <div class="dep-stars">★★★★★</div>
+            <p class="dep-text">"Uma das melhores cafeteiras. Cafés especiais e maravilhosos, comida boa e saborosa, e
+              um atendimento perfeito."</p>
+            <div class="dep-author">Rayllana L. · Google</div>
+          </div>
+          <div class="dep-card">
+            <div class="dep-quote-mark">"</div>
+            <div class="dep-stars">★★★★★</div>
+            <p class="dep-text">"A experiência do almoço foi incrível! Amei o prato e ainda pude tomar um cafezinho com
+              opção de leite vegetal — perfeito para minha alergia."</p>
+            <div class="dep-author">Girlaynne D. · Google</div>
+          </div>
+        </div>
+      </div>
+      <div class="dep-dots">
+        <button class="dep-dot active" data-slide="0"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contato">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-wrap">
+          <img src="assets/logo.svg" alt="Jerinana Logo" />
+          <span>Jerinana</span>
+        </div>
+        <p class="footer-tagline">Cafeteria autoral com baristas felizes, grãos especiais e um ambiente feito para todas
+          as gerações em Caruaru.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li>📞 (81) 99164-9060</li>
+          <li><a href="https://www.instagram.com/jerinana_/" target="_blank">@jerinana_</a></li>
+          <li>Caruaru — PE, Brasil</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#menu">Cardápio</a></li>
+          <li><a href="#unidades">Unidades</a></li>
+          <li><a href="https://www.instagram.com/jerinana_/" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Jerinana Café. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a class="social-link" href="https://www.instagram.com/jerinana_/" target="_blank" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Hamburger Menu ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    function closeMobileNav() {
+      hamburger.classList.remove('active');
+      mobileNav.classList.remove('open');
+    }
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileNav.classList.toggle('open');
+    });
+
+    // ── Nav Scroll Effect ──
+    window.addEventListener('scroll', () => {
+      document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ── Tab Switching ──
+    const tabs = document.querySelectorAll('.tab-btn');
+    const grid = document.getElementById('menu-grid');
+    const menuData = {
+      'Cafés': [
+        { icon: '☕', name: 'Espresso Jerinana', desc: 'Grão 100% arábica com notas de chocolate meio amargo e caramelo, extraído com precisão.', tag: 'Clássico', vegan: false },
+        { icon: '🥛', name: 'Cappuccino Autoral', desc: 'Nossa versão exclusiva do cappuccino, com espuma cremosa e toque de canela artesanal.', tag: 'Favorito', vegan: false },
+        { icon: '🫖', name: 'Prensa Francesa', desc: 'Servido na mesa para você extrair no seu tempo. Grãos especiais, experiência completa.', tag: 'Especial', vegan: false },
+        { icon: '☕', name: 'Café no Coador', desc: 'Preparado no coador de pano, do jeito que nossos avós faziam. Simples e perfeito.', tag: 'Tradicional', vegan: false },
+        { icon: '🌱', name: 'Latte Vegano', desc: 'Café especial com leite vegetal. Opção para quem tem alergia ao leite tradicional.', tag: 'Vegano', vegan: true },
+        { icon: '🍫', name: 'Mocha Caramel Brûlée', desc: 'Caramelo artesanal, leite vaporizado, café especial e crosta de açúcar maçaricado.', tag: 'Autoral', vegan: false },
+      ],
+      'Frapês': [
+        { icon: '🧊', name: 'Frappê Clássico', desc: 'Café especial gelado com textura de milkshake. Refrescante e intenso ao mesmo tempo.', tag: 'Favorito', vegan: false },
+        { icon: '🫚', name: 'Frappê Alto do Moura', desc: 'Café gelado com aroma de gengibre, açúcar mascavo e mel. Sabor do nosso sertão.', tag: 'Autoral', vegan: false },
+        { icon: '🌱', name: 'Frappê Vegano', desc: 'Nossa receita de frappê com leite vegetal, igualmente cremosa e deliciosa.', tag: 'Vegano', vegan: true },
+        { icon: '🍪', name: 'Frappê de Doce de Leite', desc: 'Uma explosão de sabor com café, doce de leite e espuma artesanal.', tag: 'Especial', vegan: false },
+      ],
+      'Comidas': [
+        { icon: '🥐', name: 'Croissant de Frango', desc: 'Massa folhada artesanal recheada com frango e molho pesto caseiro.', tag: 'Favorito', vegan: false },
+        { icon: '🥧', name: 'Torta Jerinana', desc: 'A nossa torta assinatura. Receita autoral que virou patrimônio da casa.', tag: 'Assinatura', vegan: false },
+        { icon: '🌮', name: 'Tapioca & Crepioca', desc: 'Opções fit e saborosas para quem quer comer bem sem abrir mão do sabor.', tag: 'Fit', vegan: false },
+        { icon: '🌱', name: 'Prato Vegano', desc: 'Cardápio vegetariano e vegano com ingredientes frescos e preparos especiais.', tag: 'Vegano', vegan: true },
+        { icon: '🍳', name: 'Café da Manhã', desc: 'Cuscuz, tapioca, pão artesanal e muito mais. Comece o dia com a Jerinana.', tag: 'Manhã', vegan: false },
+        { icon: '🍚', name: 'Risoto & Almoço', desc: 'Pratos autorais de almoço, com opções de risoto, parmegiana e massas.', tag: 'Almoço', vegan: false },
+      ],
+      'Sobremesas': [
+        { icon: '🎂', name: 'Bolo Autoral', desc: 'Bolos de receita exclusiva que mudam com a estação. Sempre uma surpresa deliciosa.', tag: 'Autoral', vegan: false },
+        { icon: '🍮', name: 'Pudim Jerinana', desc: 'Pudim cremoso feito do zero, com calda de caramelo artesanal.', tag: 'Clássico', vegan: false },
+        { icon: '🍌', name: 'Banoffee', desc: 'Camadas de banana, doce de leite e chantilly fresco. Irresistível.', tag: 'Favorito', vegan: false },
+        { icon: '🍨', name: 'Açaí', desc: 'Açaí fresquinho com acompanhamentos à sua escolha.', tag: 'Gelado', vegan: true },
+      ],
+    };
+    function renderMenu(category) {
+      const items = menuData[category];
+      grid.innerHTML = items.map(item => `
+      <div class="menu-card">
+        <div class="menu-card-icon">${item.icon}</div>
+        <div class="menu-card-name">${item.name}</div>
+        <div class="menu-card-desc">${item.desc}</div>
+        <span class="menu-tag${item.vegan ? ' vegan' : ''}">${item.tag}</span>
+      </div>
+    `).join('');
+    }
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        renderMenu(tab.textContent);
+      });
+    });
+
+    // ── Scroll Reveal ──
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // ── Counter Animation ──
+    const counters = document.querySelectorAll('.stat-num[data-target]');
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const el = e.target;
+          const target = parseInt(el.dataset.target);
+          let current = 0;
+          const step = Math.max(1, Math.floor(target / 40));
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) { current = target; clearInterval(timer); }
+            el.textContent = current === 100 ? '100%' : current === 10 ? '10K' : current;
+          }, 30);
+          counterObs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObs.observe(c));
+  </script>
+</body>
+
+</html>
