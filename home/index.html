@@ -12,8 +12,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../assets/logo.svg">
 </head>
 
 <body>
@@ -21,13 +21,12 @@
   <!-- NAV -->
   <nav id="main-nav">
     <a class="nav-logo" href="#">
-      <img src="assets/logo.svg" alt="Jerinana Logo" />
+      <img src="../assets/logo.svg" alt="Jerinana Logo" />
       <span>Jerinana</span>
     </a>
     <ul>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#galeria">Galeria</a></li>
-      <li><a href="#menu">Cardápio</a></li>
       <li><a href="#unidades">Unidades</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
@@ -40,7 +39,6 @@
   <div class="mobile-nav" id="mobile-nav">
     <a href="#sobre" onclick="closeMobileNav()">Sobre</a>
     <a href="#galeria" onclick="closeMobileNav()">Galeria</a>
-    <a href="#menu" onclick="closeMobileNav()">Cardápio</a>
     <a href="#unidades" onclick="closeMobileNav()">Unidades</a>
     <a href="#contato" onclick="closeMobileNav()">Contato</a>
   </div>
@@ -53,12 +51,11 @@
       <p class="hero-sub">Grãos 100% arábica, receitas autorais e um ambiente feito para todas as gerações. Venha viver
         a experiência Jerinana.</p>
       <div class="hero-ctas">
-        <a href="#menu" class="btn-primary">Ver cardápio</a>
-        <a href="#unidades" class="btn-secondary">Nossas unidades</a>
+        <a href="#unidades" class="btn-primary">Nossas unidades</a>
       </div>
     </div>
     <div class="hero-right">
-      <img src="assets/cafe3.png" alt="Extração de espresso na Jerinana" />
+      <img src="../assets/cafe3.png" alt="Extração de espresso na Jerinana" />
       <div class="hero-overlay"></div>
       <div class="hero-badge">
         <div class="hero-badge-inner">
@@ -78,7 +75,7 @@
       <span class="strip-sep">·</span>
       <div class="strip-item"><span class="strip-icon">✨</span><span class="strip-text">Receitas Autorais</span></div>
       <span class="strip-sep">·</span>
-      <div class="strip-item"><span class="strip-icon">📍</span><span class="strip-text">3 Unidades em Caruaru</span>
+      <div class="strip-item"><span class="strip-icon">📍</span><span class="strip-text">2 Unidades em Caruaru</span>
       </div>
       <span class="strip-sep">·</span>
       <div class="strip-item"><span class="strip-icon">🏆</span><span class="strip-text">Melhor Cafeteria de
@@ -94,7 +91,7 @@
       <span class="strip-sep">·</span>
       <div class="strip-item"><span class="strip-icon">✨</span><span class="strip-text">Receitas Autorais</span></div>
       <span class="strip-sep">·</span>
-      <div class="strip-item"><span class="strip-icon">📍</span><span class="strip-text">3 Unidades em Caruaru</span>
+      <div class="strip-item"><span class="strip-icon">📍</span><span class="strip-text">2 Unidades em Caruaru</span>
       </div>
       <span class="strip-sep">·</span>
       <div class="strip-item"><span class="strip-icon">🏆</span><span class="strip-text">Melhor Cafeteria de
@@ -122,7 +119,7 @@
           <div class="stat-label">Mil Seguidores</div>
         </div>
         <div>
-          <div class="stat-num" data-target="3">0</div>
+          <div class="stat-num" data-target="2">0</div>
           <div class="stat-label">Unidades</div>
         </div>
         <div>
@@ -132,7 +129,7 @@
       </div>
     </div>
     <div class="sobre-visual reveal">
-      <img src="assets/cafe5.jpg" alt="Cappuccino especial Jerinana com chantilly" />
+      <img src="../assets/cafe5.jpg" alt="Cappuccino especial Jerinana com chantilly" />
       <div class="sobre-visual-overlay"></div>
       <div class="sobre-visual-badge">
         <div class="badge-icon">☕</div>
@@ -154,80 +151,20 @@
     </div>
     <div class="galeria-grid reveal">
       <div class="galeria-item">
-        <img src="assets/cafe1.png" alt="Chocolate quente com chantilly" />
+        <img src="../assets/cafe1.png" alt="Chocolate quente com chantilly" />
         <div class="galeria-item-overlay"><span>Chocolate Especial</span></div>
       </div>
       <div class="galeria-item">
-        <img src="assets/cafe2.png" alt="Café na prensa francesa" />
+        <img src="../assets/cafe2.png" alt="Café na prensa francesa" />
         <div class="galeria-item-overlay"><span>Prensa Francesa</span></div>
       </div>
       <div class="galeria-item">
-        <img src="assets/cafe4.png" alt="Latte art em copo de chocolate" />
+        <img src="../assets/cafe4.png" alt="Latte art em copo de chocolate" />
         <div class="galeria-item-overlay"><span>Latte Art</span></div>
       </div>
       <div class="galeria-item">
-        <img src="assets/refeicao.jpg" alt="Prato especial da Jerinana" />
+        <img src="../assets/refeicao.jpg" alt="Prato especial da Jerinana" />
         <div class="galeria-item-overlay"><span>Refeições Autorais</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MENU -->
-  <section class="menu-section" id="menu">
-    <div class="section-header reveal">
-      <div>
-        <p class="section-label">O que preparamos</p>
-        <h2 class="section-title">Cardápio</h2>
-      </div>
-    </div>
-    <div class="menu-tabs reveal">
-      <button class="tab-btn active">Cafés</button>
-      <button class="tab-btn">Frapês</button>
-      <button class="tab-btn">Comidas</button>
-      <button class="tab-btn">Sobremesas</button>
-    </div>
-    <div class="menu-grid reveal" id="menu-grid">
-      <div class="menu-card">
-        <div class="menu-card-icon">☕</div>
-        <div class="menu-card-name">Espresso Jerinana</div>
-        <div class="menu-card-desc">Grão 100% arábica com notas de chocolate meio amargo e caramelo, extraído com
-          precisão.</div>
-        <span class="menu-tag">Clássico</span>
-      </div>
-      <div class="menu-card">
-        <div class="menu-card-icon">🥛</div>
-        <div class="menu-card-name">Cappuccino Autoral</div>
-        <div class="menu-card-desc">Nossa versão exclusiva do cappuccino, com espuma cremosa e toque de canela
-          artesanal.</div>
-        <span class="menu-tag">Favorito</span>
-      </div>
-      <div class="menu-card">
-        <div class="menu-card-icon">🫖</div>
-        <div class="menu-card-name">Prensa Francesa</div>
-        <div class="menu-card-desc">Servido na mesa para você extrair no seu tempo. Grãos especiais, experiência
-          completa.</div>
-        <span class="menu-tag">Especial</span>
-      </div>
-      <div class="menu-card">
-        <div class="menu-card-icon">☕</div>
-        <div class="menu-card-name">Café no Coador</div>
-        <div class="menu-card-desc">Preparado no coador de pano, do jeito que nossos avós faziam. Simples e perfeito.
-        </div>
-        <span class="menu-tag">Tradicional</span>
-      </div>
-      <div class="menu-card">
-        <div class="menu-card-icon">🌱</div>
-        <div class="menu-card-name">Latte Vegano</div>
-        <div class="menu-card-desc">Café especial com leite vegetal. Opção para quem tem alergia ao leite tradicional.
-        </div>
-        <span class="menu-tag vegan">Vegano</span>
-      </div>
-      <div class="menu-card">
-        <div class="menu-card-icon">🍫</div>
-        <div class="menu-card-name">Mocha de Caramel Brûlée</div>
-        <div class="menu-card-desc">Caramelo artesanal, leite vaporizado, café especial e crosta de açúcar maçaricado.
-        </div>
-        <span class="menu-tag">Autoral</span>
       </div>
     </div>
   </section>
@@ -242,23 +179,17 @@
     </div>
     <div class="unidades-content reveal">
       <div class="unidades-img">
-        <img src="assets/local.png" alt="Unidade Jerinana Café" />
+        <img src="../assets/local.png" alt="Unidade Jerinana Café" />
       </div>
       <div class="unidades-cards">
         <div class="unidade-card">
           <div class="unidade-num">01</div>
-          <div class="unidade-name">Casa Tipos</div>
-          <div class="unidade-addr">Av. Oswaldo Cruz, 96<br />Maurício de Nassau<br />Caruaru — PE</div>
-          <div class="unidade-hours">Dom–Dom · 9h às 21h</div>
-        </div>
-        <div class="unidade-card">
-          <div class="unidade-num">02</div>
           <div class="unidade-name">Ferreira Costa</div>
           <div class="unidade-addr">Av. dos Estados, 129 — Loja 02<br />Nova Caruaru<br />Caruaru — PE</div>
           <div class="unidade-hours">Seg–Sáb · 8h às 20h<br />Dom · 9h às 18h</div>
         </div>
         <div class="unidade-card">
-          <div class="unidade-num">03</div>
+          <div class="unidade-num">02</div>
           <div class="unidade-name">Shopping Difusora</div>
           <div class="unidade-addr">Av. Agamenon Magalhães, 444<br />Shopping Difusora<br />Caruaru — PE</div>
           <div class="unidade-hours">Horários do shopping</div>
@@ -310,7 +241,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-logo-wrap">
-          <img src="assets/logo.svg" alt="Jerinana Logo" />
+          <img src="../assets/logo.svg" alt="Jerinana Logo" />
           <span>Jerinana</span>
         </div>
         <p class="footer-tagline">Cafeteria autoral com baristas felizes, grãos especiais e um ambiente feito para todas
@@ -328,7 +259,6 @@
         <h4>Navegação</h4>
         <ul>
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#menu">Cardápio</a></li>
           <li><a href="#unidades">Unidades</a></li>
           <li><a href="https://www.instagram.com/jerinana_/" target="_blank">Instagram</a></li>
         </ul>
@@ -366,57 +296,7 @@
       document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // ── Tab Switching ──
-    const tabs = document.querySelectorAll('.tab-btn');
-    const grid = document.getElementById('menu-grid');
-    const menuData = {
-      'Cafés': [
-        { icon: '☕', name: 'Espresso Jerinana', desc: 'Grão 100% arábica com notas de chocolate meio amargo e caramelo, extraído com precisão.', tag: 'Clássico', vegan: false },
-        { icon: '🥛', name: 'Cappuccino Autoral', desc: 'Nossa versão exclusiva do cappuccino, com espuma cremosa e toque de canela artesanal.', tag: 'Favorito', vegan: false },
-        { icon: '🫖', name: 'Prensa Francesa', desc: 'Servido na mesa para você extrair no seu tempo. Grãos especiais, experiência completa.', tag: 'Especial', vegan: false },
-        { icon: '☕', name: 'Café no Coador', desc: 'Preparado no coador de pano, do jeito que nossos avós faziam. Simples e perfeito.', tag: 'Tradicional', vegan: false },
-        { icon: '🌱', name: 'Latte Vegano', desc: 'Café especial com leite vegetal. Opção para quem tem alergia ao leite tradicional.', tag: 'Vegano', vegan: true },
-        { icon: '🍫', name: 'Mocha Caramel Brûlée', desc: 'Caramelo artesanal, leite vaporizado, café especial e crosta de açúcar maçaricado.', tag: 'Autoral', vegan: false },
-      ],
-      'Frapês': [
-        { icon: '🧊', name: 'Frappê Clássico', desc: 'Café especial gelado com textura de milkshake. Refrescante e intenso ao mesmo tempo.', tag: 'Favorito', vegan: false },
-        { icon: '🫚', name: 'Frappê Alto do Moura', desc: 'Café gelado com aroma de gengibre, açúcar mascavo e mel. Sabor do nosso sertão.', tag: 'Autoral', vegan: false },
-        { icon: '🌱', name: 'Frappê Vegano', desc: 'Nossa receita de frappê com leite vegetal, igualmente cremosa e deliciosa.', tag: 'Vegano', vegan: true },
-        { icon: '🍪', name: 'Frappê de Doce de Leite', desc: 'Uma explosão de sabor com café, doce de leite e espuma artesanal.', tag: 'Especial', vegan: false },
-      ],
-      'Comidas': [
-        { icon: '🥐', name: 'Croissant de Frango', desc: 'Massa folhada artesanal recheada com frango e molho pesto caseiro.', tag: 'Favorito', vegan: false },
-        { icon: '🥧', name: 'Torta Jerinana', desc: 'A nossa torta assinatura. Receita autoral que virou patrimônio da casa.', tag: 'Assinatura', vegan: false },
-        { icon: '🌮', name: 'Tapioca & Crepioca', desc: 'Opções fit e saborosas para quem quer comer bem sem abrir mão do sabor.', tag: 'Fit', vegan: false },
-        { icon: '🌱', name: 'Prato Vegano', desc: 'Cardápio vegetariano e vegano com ingredientes frescos e preparos especiais.', tag: 'Vegano', vegan: true },
-        { icon: '🍳', name: 'Café da Manhã', desc: 'Cuscuz, tapioca, pão artesanal e muito mais. Comece o dia com a Jerinana.', tag: 'Manhã', vegan: false },
-        { icon: '🍚', name: 'Risoto & Almoço', desc: 'Pratos autorais de almoço, com opções de risoto, parmegiana e massas.', tag: 'Almoço', vegan: false },
-      ],
-      'Sobremesas': [
-        { icon: '🎂', name: 'Bolo Autoral', desc: 'Bolos de receita exclusiva que mudam com a estação. Sempre uma surpresa deliciosa.', tag: 'Autoral', vegan: false },
-        { icon: '🍮', name: 'Pudim Jerinana', desc: 'Pudim cremoso feito do zero, com calda de caramelo artesanal.', tag: 'Clássico', vegan: false },
-        { icon: '🍌', name: 'Banoffee', desc: 'Camadas de banana, doce de leite e chantilly fresco. Irresistível.', tag: 'Favorito', vegan: false },
-        { icon: '🍨', name: 'Açaí', desc: 'Açaí fresquinho com acompanhamentos à sua escolha.', tag: 'Gelado', vegan: true },
-      ],
-    };
-    function renderMenu(category) {
-      const items = menuData[category];
-      grid.innerHTML = items.map(item => `
-      <div class="menu-card">
-        <div class="menu-card-icon">${item.icon}</div>
-        <div class="menu-card-name">${item.name}</div>
-        <div class="menu-card-desc">${item.desc}</div>
-        <span class="menu-tag${item.vegan ? ' vegan' : ''}">${item.tag}</span>
-      </div>
-    `).join('');
-    }
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        renderMenu(tab.textContent);
-      });
-    });
+
 
     // ── Scroll Reveal ──
     const revealEls = document.querySelectorAll('.reveal');
