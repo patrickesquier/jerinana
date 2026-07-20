@@ -1,0 +1,15 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/difusora",
+      "destination": "/cardapio/difusora",
+      "permanent": true
+    },
+    {
+      "source": "/ferreira",
+      "destination": "/cardapio/ferreira",
+      "permanent": true
+    }
+  ]
+}
