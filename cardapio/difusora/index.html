@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardápio Difusora — Jerinana Café</title>
+  <meta name="description" content="Cardápio completo da unidade Shopping Difusora do Jerinana Café. Almoço executivo, tapiocas, toasts, banamel e mais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="difusora.css" />
+  <link rel="icon" href="../../assets/logo.svg" />
+</head>
+<body>
+
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <a href="../" class="back-btn" id="back-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        <span>Voltar</span>
+      </a>
+      <div class="hero-logo">
+        <img src="../../assets/logo.svg" alt="Jerinana" />
+      </div>
+      <h1 class="hero-title">Shopping Difusora</h1>
+      <p class="hero-sub">Cardápio completo • Jerinana Café</p>
+    </div>
+  </section>
+
+  <main class="menu-page" id="menu-page">
+
+    <!-- ═══════════════════════════ ALMOÇO EXECUTIVO ═══════════════════════════ -->
+    <section class="menu-section" id="section-almoco">
+      <div class="section-header">
+        <span class="section-emoji">🍽️</span>
+        <div>
+          <h2 class="section-title">Almoço Executivo</h2>
+          <p class="section-sub">Mais Pedido — Acompanha bebida</p>
+        </div>
+      </div>
+
+      <div class="items-grid">
+
+        <article class="menu-card" data-delay="0">
+          <div class="card-img-wrap">
+            <img src="../img/strogonoff.png" alt="Strogonoff" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+            <span class="badge badge-hot">⭐ Mais pedido</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Strogonoff</h3>
+            <p class="card-desc">Cremoso e irresistível, servido com arroz e batata palha. Escolha entre frango ou carne.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Frango</span>
+                <span class="price">R$ 25,90</span>
+              </div>
+              <div class="price-group">
+                <span class="price-label">Carne</span>
+                <span class="price">R$ 28,90</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="1">
+          <div class="card-img-wrap">
+            <img src="../img/panqueca.png" alt="Panqueca" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Panqueca</h3>
+            <p class="card-desc">Panqueca de frango ou carne, recheada e coberta com molho especial. Acompanha salada.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Frango ou Carne + Salada</span>
+                <span class="price">R$ 25,90</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="2">
+          <div class="card-img-wrap">
+            <img src="../img/lasanha.png" alt="Lasanha" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Lasanha</h3>
+            <p class="card-desc">Lasanha gratinada de frango ou carne. Acompanha arroz ou salada à escolha.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Frango + Arroz/Salada</span>
+                <span class="price">R$ 25,90</span>
+              </div>
+              <div class="price-group">
+                <span class="price-label">Carne + Arroz/Salada</span>
+                <span class="price">R$ 28,90</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="3">
+          <div class="card-img-wrap">
+            <div class="card-img-placeholder">
+              <span>🍝</span>
+            </div>
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Macarrão à Bolonhesa</h3>
+            <p class="card-desc">Macarrão al dente ao molho bolonhesa tradicional, encorpado e saboroso.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Porção</span>
+                <span class="price">R$ 25,90</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="4">
+          <div class="card-img-wrap">
+            <img src="../img/carne_sol.png" alt="Carne de Sol na Nata" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Carne de Sol na Nata</h3>
+            <p class="card-desc">Carne de sol macia em creme de nata, servida com cuscuz ou arroz.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Cuzcuz ou Arroz</span>
+                <span class="price">R$ 28,90</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PEÇA TAMBÉM ═══════════════════════════ -->
+    <section class="menu-section" id="section-peca">
+      <div class="section-header">
+        <span class="section-emoji">✨</span>
+        <div>
+          <h2 class="section-title">Peça Também</h2>
+          <p class="section-sub">Outras delícias do nosso cardápio</p>
+        </div>
+      </div>
+
+      <div class="items-grid">
+
+        <article class="menu-card" data-delay="0">
+          <div class="card-img-wrap">
+            <img src="../img/ovos_cremosos.png" alt="Ovos Cremosos" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Ovos Cremosos</h3>
+            <p class="card-desc">Ovos batidos no ponto perfeito, cremosos e aveludados. Simples e deliciosos.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Porção</span>
+                <span class="price">R$ 9,00</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="1">
+          <div class="card-img-wrap">
+            <img src="../img/circuito_cafe.png" alt="Circuito do Café" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+            <span class="badge badge-special">Clássico</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Circuito do Café 2019</h3>
+            <p class="card-desc">Baguete na chapa com metade doce de leite e metade requeijão. Acompanha latte quente de doce de leite.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Combo</span>
+                <span class="price">R$ 28,90</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="2">
+          <div class="card-img-wrap">
+            <img src="../img/tapioca.png" alt="Tapioca ou Crepioca" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Tapioca ou Crepioca</h3>
+            <p class="card-desc">Sabores: frango com queijo, ovos cremosos, carne moída com queijo.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Clássica</span>
+                <span class="price">R$ 19,00</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="3">
+          <div class="card-img-wrap">
+            <img src="../img/tapioca.png" alt="Tapioca Premium" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+            <span class="badge badge-special">Premium</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Tapioca ou Crepioca Premium</h3>
+            <p class="card-desc">Carne de sol com queijo, charque com creme cheese ou charque com queijo coalho.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Premium</span>
+                <span class="price">R$ 21,00</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="4">
+          <div class="card-img-wrap">
+            <img src="../img/toast_guacamole.png" alt="Toast de Guacamole" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Toast de Guacamole</h3>
+            <p class="card-desc">Toast crocante com guacamole fresco e ovos cremosos sobre pão artesanal.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Com ovos cremosos</span>
+                <span class="price">R$ 21,00</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="5">
+          <div class="card-img-wrap">
+            <div class="card-img-placeholder">
+              <span>🥓</span>
+            </div>
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Ovos Cremosos com Bacon</h3>
+            <p class="card-desc">A perfeita combinação: ovos cremosos no ponto certo com bacon crocante.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Porção</span>
+                <span class="price">R$ 15,00</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="6">
+          <div class="card-img-wrap">
+            <img src="../img/brunch.png" alt="Brunch de Toasts" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+            <span class="badge badge-hot">⭐ Favorito</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Brunch de Toasts</h3>
+            <p class="card-desc">Duas fatias: metade ovos cremosos com bacon, metade queijo, mel e banana caramelizada.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Duplo</span>
+                <span class="price">R$ 35,00</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-delay="7">
+          <div class="card-img-wrap">
+            <img src="../img/banamel.png" alt="Banamel" class="card-img" loading="lazy" />
+            <div class="card-img-overlay"></div>
+            <span class="badge badge-special">Especial</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Banamel</h3>
+            <p class="card-desc">Banana, mel e queijo em harmonia caramelizada com leve toque de canela. Irresistível.</p>
+            <div class="card-footer">
+              <div class="price-group">
+                <span class="price-label">Porção</span>
+                <span class="price">R$ 24,00</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INSTAGRAM CTA -->
+    <div class="cta-section">
+      <a href="https://www.instagram.com/jerinana_/" target="_blank" rel="noopener" class="insta-cta">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <div class="cta-text">
+          <span class="cta-title">Acompanhe no Instagram</span>
+          <span class="cta-sub">@jerinana_ • novidades e promoções</span>
+        </div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-text">Feito com ☕ em Caruaru</p>
+      <p class="footer-sub">© 2026 Jerinana Café. Todos os direitos reservados.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    // Intersection Observer for staggered card entrance
+    const cards = document.querySelectorAll('.menu-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const delay = parseInt(entry.target.dataset.delay || 0) * 80;
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    cards.forEach(card => observer.observe(card));
+
+    // Image error fallback
+    document.querySelectorAll('.card-img').forEach(img => {
+      img.addEventListener('error', function () {
+        this.style.display = 'none';
+        const placeholder = this.parentElement.querySelector('.card-img-placeholder');
+        if (!placeholder) {
+          const ph = document.createElement('div');
+          ph.className = 'card-img-placeholder';
+          ph.innerHTML = '<span>🍽️</span>';
+          this.parentElement.insertBefore(ph, this);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
