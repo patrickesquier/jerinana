@@ -230,6 +230,33 @@ body {
 }
 .insta-btn svg { color: #e1306c; }
 
+/* ── RULES ── */
+.rules-btn {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 22px;
+  background: rgba(254,254,254,0.06);
+  border: 1px solid rgba(254,254,254,0.12);
+  border-radius: 14px;
+  text-decoration: none;
+  color: var(--areia);
+  font-size: 13.5px; font-weight: 600;
+  transition: all 0.25s ease;
+  width: 100%;
+  justify-content: center;
+  margin-top: 12px;
+  opacity: 0;
+  animation: slideUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.35s forwards;
+}
+.rules-btn:hover {
+  background: rgba(5, 111, 33, 0.15);
+  border-color: var(--verde);
+  color: var(--branco);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(5, 111, 33, 0.18);
+}
+.rules-btn svg { color: var(--areia); transition: color 0.25s ease; }
+.rules-btn:hover svg { color: var(--branco); }
+
 /* ── FOOTER ── */
 .footer {
   margin-top: auto;
